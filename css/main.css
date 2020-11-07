@@ -27,7 +27,9 @@
 		'sidebar main main main'
 		'sidebar section-one section-two section-three'
 		'sidebar footer footer footer';
+	grid-gap: 0.3rem;
 }
+
 header {
 	background: var(--headerColor);
 	grid-area: header;
@@ -56,4 +58,34 @@ main {
 footer {
 	background: var(--footer);
 	grid-area: footer;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr, 04fr, 2.2fr, 1.2fr, 1.2fr 1.2fr 1fr;
+		grid-template-areas:
+			'header header'
+			'sidebar sidebar'
+			'main main'
+			'section-one'
+			'section-two'
+			'section-three'
+			'footer';
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr, 04fr, 2.2fr, 1.2fr, 1.2fr 1.2fr 1fr;
+		grid-template-areas:
+			'header'
+			'sidebar'
+			'main'
+			'section-one'
+			'section-two'
+			'section-three'
+			'footer';
+	}
 }
