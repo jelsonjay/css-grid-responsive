@@ -25,27 +25,35 @@
 	grid-template-areas:
 		'header header header header'
 		'sidebar main main main'
-		'sidebar section-one section-two section-three';
+		'sidebar section-one section-two section-three'
+		'sidebar footer footer footer';
 }
 header {
 	background: var(--headerColor);
+	grid-area: header;
 }
 main {
 	background: var(--main);
+	grid-area: main;
 }
 .sidebar {
 	background: var(--mainSidbar);
+	grid-area: sidebar;
 }
 .section-one {
 	background: var(--mainSection-One);
+	grid-area: section-one;
 }
 .section-two {
 	background: var(--mainSection-two);
+	grid-area: section-two;
 }
 .section-three {
 	background: var(--mainSection-three);
+	grid-area: section-three;
 }
 
 footer {
 	background: var(--footer);
+	grid-area: footer;
 }
