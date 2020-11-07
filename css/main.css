@@ -16,6 +16,15 @@
 	--footer: #112215;
 	--fontSize: 1.1rem;
 	--lineHieght: 1.5;
+	--main-radius: 5px;
+	--main-padding: 10px;
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: capitalize;
+	font-size: 1rem;
+	text-align: center;
+	color: #fff;
 }
 .container {
 	display: grid;
@@ -33,31 +42,45 @@
 header {
 	background: var(--headerColor);
 	grid-area: header;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 main {
 	background: var(--main);
 	grid-area: main;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 .sidebar {
 	background: var(--mainSidbar);
 	grid-area: sidebar;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 .section-one {
 	background: var(--mainSection-One);
 	grid-area: section-one;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 .section-two {
 	background: var(--mainSection-two);
 	grid-area: section-two;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 .section-three {
 	background: var(--mainSection-three);
 	grid-area: section-three;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 footer {
 	background: var(--footer);
 	grid-area: footer;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 @media only screen and (max-width: 768px) {
