@@ -9,7 +9,9 @@
 	--mainWhite: #fff;
 	--main: #cacfcb;
 	--mainOrange: orange;
-	--mainSection: #335a55;
+	--mainSection-One: #335a55;
+	--mainSection-two: #141414;
+	--mainSection-three: #05fcdb;
 	--mainSidbar: coral;
 	--footer: #112215;
 	--fontSize: 1.1rem;
@@ -20,6 +22,10 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 0.2fr, 1.5fr, 1.2fr, 0.8fr;
 	height: 100vh;
+	grid-template-areas:
+		'header header header header'
+		'sidebar main main main'
+		'sidebar section-one section-two section-three';
 }
 header {
 	background: var(--headerColor);
@@ -30,8 +36,14 @@ main {
 .sidebar {
 	background: var(--mainSidbar);
 }
-.section {
-	background: var(--mainSection);
+.section-one {
+	background: var(--mainSection-One);
+}
+.section-two {
+	background: var(--mainSection-two);
+}
+.section-three {
+	background: var(--mainSection-three);
 }
 
 footer {
