@@ -33,9 +33,9 @@ body {
 	height: 100vh;
 	grid-template-areas:
 		'header header header header'
-		'sidebar main main main'
-		'sidebar section-one section-two section-three'
-		'sidebar footer footer footer';
+		'main main main main'
+		'section-one section-two section-three'
+		'footer footer footer footer';
 	grid-gap: 0.3rem;
 }
 
@@ -89,7 +89,6 @@ footer {
 		grid-template-rows: 0.4fr, 04fr, 2.2fr, 1.2fr, 1.2fr 1.2fr 1fr;
 		grid-template-areas:
 			'header header'
-			'sidebar sidebar'
 			'main main'
 			'section-one'
 			'section-two'
@@ -104,7 +103,6 @@ footer {
 		grid-template-rows: 0.4fr, 04fr, 2.2fr, 1.2fr, 1.2fr 1.2fr 1fr;
 		grid-template-areas:
 			'header'
-			'sidebar'
 			'main'
 			'section-one'
 			'section-two'
