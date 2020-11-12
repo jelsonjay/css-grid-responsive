@@ -34,7 +34,7 @@ body {
 	grid-template-areas:
 		'header header header header'
 		'main main main main'
-		'section-one section-two section-three'
+		'section-one section-one section-two section-three'
 		'footer footer footer footer';
 	grid-gap: 0.3rem;
 }
